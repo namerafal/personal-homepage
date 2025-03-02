@@ -3,6 +3,7 @@
         backgroundLm: "#FBFBFE",
         black: "#252525",
         semiDark: "#363636",
+        doveGray:"#6E6E6E",
         white: "#FFFFFF",
         textSecondary: "#6E7E91",
         mainBlueLm: "#0366D6",
@@ -78,7 +79,7 @@ export const themeDark = {
             header: colorNames.white,
         },
         themeSwitch: {
-            background: colorNames.textSecondary,
+            background: colorNames.doveGray,
             icon: colorNames.black,
         },
     },

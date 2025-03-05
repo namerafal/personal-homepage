@@ -43,11 +43,11 @@ export const IconWrapper = styled.span`
   background: currentColor;
   transition: transform 0.3s;
 
-  ${({ moveToRight }) => moveToRight && css`
+  ${({ $moveToRight }) => $moveToRight && css`
     transform: translateX(20px);
   `};
 `;
 
 export const Icon = styled(SunIcon)`
-color: ${({ theme }) => theme.color.themeSwitch.icon};
+  color: ${({ theme }) => theme.colors.themeSwitch.icon};
 `;

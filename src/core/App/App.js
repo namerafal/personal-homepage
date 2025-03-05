@@ -8,12 +8,7 @@ import { themeDark, themeLight } from '../../theme';
 import { PersonalHomepage } from '../../features/personalHomepage/PersonalHomepage';
 
 export const App = () => {
-  const isDarkMode = useSelector(selectIsDarkTheme);
-  // const dispatch = useDispatch();
-
-  // const handleToggleTheme = () => {
-  //   dispatch(toggleTheme());
-  // };
+  const isDarkMode = useSelector(selectIsDarkTheme);  
 
   return (
     <ThemeProvider theme={isDarkMode ? themeDark : themeLight}>

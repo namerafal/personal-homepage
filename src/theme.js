@@ -1,5 +1,4 @@
-
-   const colorNames = {
+const colorNames = {
         backgroundLm: "#FBFBFE",
         black: "#252525",
         semiDark: "#363636",

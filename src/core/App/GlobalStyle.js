@@ -10,9 +10,6 @@ export const GlobalStyles = createGlobalStyle`
     }
     
     body { 
-        margin: 50px;
-        width: 1216px;
-        height: 100%;
         transition: background-color 0.3s;
         background-color: ${({ theme }) => theme.colors.site.background};
         color: ${({ theme }) => theme.colors.site.text};

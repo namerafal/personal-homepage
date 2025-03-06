@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const themeSlice = createSlice({
+const themeReducer = createSlice({
     name: 'theme',
     initialState: {
         isDarkTheme: false,
@@ -14,9 +14,9 @@ const themeSlice = createSlice({
 
 export const {
     toggleTheme
-} = themeSlice.actions;
+} = themeReducer.actions;
 
 const selectThemeState = (state) => state.theme;
 export const selectIsDarkTheme = state => selectThemeState(state).isDarkTheme;
 
-export default themeSlice.reducer;
+export default themeReducer.reducer;

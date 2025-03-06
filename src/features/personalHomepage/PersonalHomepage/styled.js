@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-const MainWrapper = styled.main`
-  max-width: 1400px;
+const MainWrapper = styled.div`
+  max-width: 1216px;
   margin: 0 auto;
   overflow-wrap: anywhere;
   display: flex;

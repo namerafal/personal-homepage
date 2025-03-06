@@ -1,11 +1,10 @@
-import styled from "styled-components";
+import React from 'react';
 
-export const Header = styled.header`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  background-color: ${({ theme }) => theme.colors.background};
-  color: ${({ theme }) => theme.colors.text};
-  border-bottom: 1px solid ${({ theme }) => theme.colors.border};
-`;
+
+const Header = () => (
+ <h1>
+    Welcome to my personal homepage!
+ </h1>
+);
+
+export default Header;

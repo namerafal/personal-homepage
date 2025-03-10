@@ -24,7 +24,7 @@ const common = {
         tabletHorizontalMax: 1199,
     },
 
-    boxShadow: "0px -2px 50px rgba(9, 10, 51, 0.2), 0px 16px 58px rgba(9, 10, 51, 0.03)",
+    boxShadow: " 0px -2px 20px 0px rgb(9 10 51 / 0.03), 1px 14px 17px 0px rgba(9, 10, 51, 0.03)",
     borderRadiusSmall: "4px",
 };
 

@@ -1,30 +1,26 @@
 import styled from 'styled-components';
 
-export const SectionWrapper = styled.section`
-  margin: 20px 0;
-`;
+// export const TitleWrapper = styled.header`
+//   text-align: center;
+//   margin-bottom: 16px;
+// `;
 
-export const TitleWrapper = styled.header`
-  text-align: center;
-  margin-bottom: 16px;
-`;
+// export const Icon = styled.div`
+//   width: 48px;
+//   height: 48px;
+//   margin: 0 auto;
+//   fill: ${({ theme }) => theme.colors.primary};
+// `;
 
-export const Icon = styled.div`
-  width: 48px;
-  height: 48px;
-  margin: 0 auto;
-  fill: ${({ theme }) => theme.colors.primary};
-`;
+// export const Title = styled.h2`
+//   font-size: 24px;
+//   margin: 8px 0;
+// `;
 
-export const Title = styled.h2`
-  font-size: 24px;
-  margin: 8px 0;
-`;
-
-export const Subtitle = styled.p`
-  font-size: 16px;
-  color: ${({ theme }) => theme.colors.textSecondary};
-`;
+// export const Subtitle = styled.p`
+//   font-size: 16px;
+//   color: ${({ theme }) => theme.colors.textSecondary};
+// `;
 
 export const RepoList = styled.div`
   display: grid;
@@ -42,6 +38,7 @@ export const RepoTile = styled.div`
   h3 {
     margin: 0 0 8px;
     font-size: 18px;
+    text-transform: capitalize;
   }
 
   p {

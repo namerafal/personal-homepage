@@ -5,8 +5,8 @@ import {
   selectRepositories,
   selectRepositoriesStatus,
 } from '../../personalHomepageSlice';
-import { RepoTile, RepoList, TitleWrapper, Icon, Title, Subtitle, SectionWrapper } from './styled';
-import { ReactComponent as GitHubIcon } from '../Footer/SocialIcons/icons/github.svg';
+import { RepoTile, RepoList } from './styled';
+// import { ReactComponent as GitHubIcon } from '../Footer/SocialIcons/icons/github.svg';
 
 const Portfolio = ({ username = 'namerafal' }) => {
   const dispatch = useDispatch();
@@ -26,12 +26,12 @@ const Portfolio = ({ username = 'namerafal' }) => {
   }
 
   return (
-    <SectionWrapper>
-      <TitleWrapper>
+    <>
+      {/* <TitleWrapper>
         <Icon as={GitHubIcon} />
         <Title>Portfolio</Title>
         <Subtitle>My recent projects</Subtitle>
-      </TitleWrapper>
+      </TitleWrapper> */}
       <RepoList>
         {repositories && repositories.length > 0 ? (
           repositories.map(repo => (
@@ -45,7 +45,7 @@ const Portfolio = ({ username = 'namerafal' }) => {
           <div>No repositories found.</div>
         )}
       </RepoList>
-    </SectionWrapper>
+    </>    
   );
 };
 

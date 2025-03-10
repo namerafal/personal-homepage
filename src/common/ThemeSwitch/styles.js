@@ -4,6 +4,11 @@ import { ReactComponent as SunIcon } from "./sun.svg";
 export const Wrapper = styled.div`
   display: flex;  
   justify-content: flex-end; 
+  margin-bottom: -30px;
+
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+    margin: 0;
+  }
 `;
 
 export const Button = styled.button`
@@ -31,7 +36,7 @@ export const IconSpace = styled.span`
   display: flex;
   width: 48px;
   border: 1px solid;
-  border-radius: 12px;
+  border-radius: 20px;
   background-color: ${({ theme }) => theme.colors.themeSwitch.background};
   padding: 3px;
 `;

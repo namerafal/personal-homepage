@@ -1,19 +1,31 @@
 import MainWrapper from "./styled";
 import { ThemeSwitch } from "../../../common/ThemeSwitch/index";
-import { Tile } from "../../../common/Tile";
+import { TileList } from "../../../common/Tile";
 // import Header from "./Header";
 
 import PortfolioInformation from "./Portfolio";
 import { MainInformation } from "./MainInformation";
+import { SectionCommon } from "../../../common/Section/commonSection";
+import { skillsNow, skillsToHave } from "../../../listOfSkills/skills";
+import { ReactComponent as GitHubIcon } from "./Footer/SocialIcons/icons/github.svg"
+import Header from "./Header";
+// import { SkillsetIncludes } from "../../../listOfSkills/SkillsetIncludes";
 
 export const PersonalHomepage = () => {
     return (
         <MainWrapper>
             <ThemeSwitch />
-            <MainInformation />           
-            <Tile title="About me" content="I am a software engineer." />
-            <Tile title="Skills" content="I am skilled in JavaScript, React, and Node.js." />
-            <PortfolioInformation />
+            <MainInformation />
+            <SectionCommon>
+                <TileList title="My skillset includes" content={skillsNow} />
+            </SectionCommon>
+            <SectionCommon>
+                <TileList title="What I want to learn next" content={skillsToHave} />
+            </SectionCommon>
+            <SectionCommon>
+                <Header icon={GitHubIcon} title="Portfolio" subtitle={"My recent projects"}/>
+                <PortfolioInformation />
+            </SectionCommon>
         </MainWrapper>
     );
 };

@@ -1,7 +1,7 @@
 {
   "short_name": "Personal Homepage",
   "name": "Rafal Olewicz Personal Homepage",
-  "icons": [   
+  "icons": [
   ],
   "start_url": ".",
   "display": "standalone",

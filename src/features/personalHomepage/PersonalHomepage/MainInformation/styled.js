@@ -21,15 +21,10 @@ export const Wrapper = styled.header`
 
 export const Picture = styled.img`
   width: 30vw;
+  height: 30vw;
   max-width: 384px;
   max-height: 384px;
   border-radius: 50%;
-  
-    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
-        /* width: 132px; */
-        /* width: 128px; */
-        height: 30vw;
-    }
 `;
 
 export const ThisIs = styled.div`

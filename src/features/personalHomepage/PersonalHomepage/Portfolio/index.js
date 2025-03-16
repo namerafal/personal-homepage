@@ -6,6 +6,8 @@ import {
   selectRepositoriesStatus,
 } from '../../personalHomepageSlice';
 import { RepoTile, RepoList } from './styled';
+import { RepoLinks } from './Links';
+import { Loading } from '../../../../common/Loading';
 // import { ReactComponent as GitHubIcon } from '../Footer/SocialIcons/icons/github.svg';
 
 const Portfolio = ({ username = 'namerafal' }) => {
@@ -13,12 +15,12 @@ const Portfolio = ({ username = 'namerafal' }) => {
   const repositories = useSelector(selectRepositories);
   const status = useSelector(selectRepositoriesStatus);
 
-  useEffect(() => {    
+  useEffect(() => {
     dispatch(fetchRepositories(username));
-  }, [dispatch, username]);  
+  }, [dispatch, username]);
 
   if (status === "loading") {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
 
   if (status === "error") {
@@ -27,25 +29,21 @@ const Portfolio = ({ username = 'namerafal' }) => {
 
   return (
     <>
-      {/* <TitleWrapper>
-        <Icon as={GitHubIcon} />
-        <Title>Portfolio</Title>
-        <Subtitle>My recent projects</Subtitle>
-      </TitleWrapper> */}
+    
       <RepoList>
         {repositories && repositories.length > 0 ? (
           repositories.map(repo => (
             <RepoTile key={repo.id}>
               <h3>{repo.name}</h3>
-              <p>{repo.description}</p>
-              <a href={repo.html_url} target="_blank" rel="noopener noreferrer">View Repository</a>
+              <p>{repo.description}</p>             
+              <RepoLinks link={repo}/>
             </RepoTile>
           ))
         ) : (
           <div>No repositories found.</div>
         )}
       </RepoList>
-    </>    
+    </>
   );
 };
 

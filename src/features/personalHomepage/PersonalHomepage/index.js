@@ -3,12 +3,13 @@ import { ThemeSwitch } from "../../../common/ThemeSwitch/index";
 import { TileList } from "../../../common/Tile";
 // import Header from "./Header";
 
-import PortfolioInformation from "./Portfolio";
+import Portfolio from "./Portfolio";
 import { MainInformation } from "./MainInformation";
 import { SectionCommon } from "../../../common/Section/commonSection";
 import { skillsNow, skillsToHave } from "../../../listOfSkills/skills";
 import { ReactComponent as GitHubIcon } from "./Footer/SocialIcons/icons/github.svg"
 import Header from "./Header";
+import { Footer } from "./Footer";
 // import { SkillsetIncludes } from "../../../listOfSkills/SkillsetIncludes";
 
 export const PersonalHomepage = () => {
@@ -24,8 +25,9 @@ export const PersonalHomepage = () => {
             </SectionCommon>
             <SectionCommon>
                 <Header icon={GitHubIcon} title="Portfolio" subtitle={"My recent projects"}/>
-                <PortfolioInformation />
+                <Portfolio />
             </SectionCommon>
+            <Footer/>
         </MainWrapper>
     );
 };

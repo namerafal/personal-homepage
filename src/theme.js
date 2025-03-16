@@ -9,12 +9,13 @@ const colorNames = {
         mainBlueDm: "#2188FF",
         focusBlueLm: "#8CC2FF",
         focusBlueDm: "#6D93BE",
-        hoverLightBlue: "#0366D6",
         semiGrey: "#D1D5DA",
         lighterGrey: "#D1D5DA",
-        lightGrey: "#E5E5E5",       
+        lightGrey: "#E5E5E5",     
 
         ironTransparent: "rgba(209, 213, 218, 0.3)",
+        hoverLightBlueLM: "rgba(3, 102, 214, 0.2)",
+        caledorSky: "rgba(3, 102, 214, 0.4)",
 };
 
 const common = {
@@ -44,9 +45,10 @@ export const themeLight = {
         },
         tileBackground: colorNames.white,
         headerLine: colorNames.lightGrey,
+        underlineLink: colorNames.hoverLightBlueLM,
         tile: {
-            border: colorNames.lighterGrey,
-            borderHover: colorNames.hoverLightBlue,
+            border: colorNames.ironTransparent,
+            borderHover: colorNames.hoverLightBlueLM,
             header: colorNames.mainBlueLm,
         },
         themeSwitch: {
@@ -72,6 +74,7 @@ export const themeDark = {
         },
         tileBackground: colorNames.semiDark,
         headerLine: colorNames.semiGrey,
+        underlineLink: colorNames.caledorSky,
         tile: {
             border: colorNames.semiGrey,
             borderHover: colorNames.hoverLightBlue,

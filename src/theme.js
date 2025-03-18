@@ -15,6 +15,7 @@ const colorNames = {
 
         ironTransparent: "rgba(209, 213, 218, 0.3)",
         hoverLightBlueLM: "rgba(3, 102, 214, 0.2)",
+        hoverLightBlueDM: "rgba(3, 102, 214, 0.4)",
         caledorSky: "rgba(3, 102, 214, 0.4)",
 };
 
@@ -77,7 +78,7 @@ export const themeDark = {
         underlineLink: colorNames.caledorSky,
         tile: {
             border: colorNames.semiGrey,
-            borderHover: colorNames.hoverLightBlue,
+            borderHover: colorNames.hoverLightBlueDM,
             header: colorNames.white,
         },
         themeSwitch: {

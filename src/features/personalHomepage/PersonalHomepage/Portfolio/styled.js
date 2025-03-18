@@ -14,6 +14,7 @@ export const RepoTile = styled.div`
   border-radius: ${({ theme }) => theme.borderRadiusSmall};
   background-color: ${({ theme }) => theme.colors.tileBackground};
   box-shadow: ${({ theme }) => theme.boxShadow};
+  transition: border-color 0.3s;
 
   @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
     height: fit-content;

@@ -9,7 +9,7 @@ export const ListOfSkills = ({content}) => (
           ))}
         </List>
       ) : (
-        content
+        "🤷🏻‍♂️ Something went wrong."
       )}
     </>
 );

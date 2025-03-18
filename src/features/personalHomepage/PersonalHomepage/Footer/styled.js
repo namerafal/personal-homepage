@@ -25,3 +25,8 @@ export const Description = styled.p`
     margin: 0px;
     color: ${({ theme }) => theme.colors.textPrimary};
 `;
+
+export const Emoticon = styled.img`
+    position: absolute;
+    padding-left: 5px;
+`;

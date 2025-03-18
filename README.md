@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+# Personal Homepage - Rafal Olewicz
+  
+This project is a modern, responsive personal homepage built with React, Redux, and styled-components. It showcases my skills, projects, and contact information in a visually appealing and user-friendly way. The application leverages Redux-Saga for state management and includes a dark mode toggle for enhanced user experience. Deployed using GitHub Pages, it ensures easy accessibility and seamless performance across devices.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Page
+https://namerafal.github.io/personal-homepage/
 
 ## Available Scripts
 

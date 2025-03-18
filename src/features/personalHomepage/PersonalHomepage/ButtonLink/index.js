@@ -15,6 +15,10 @@ export const ButtonLink = styled.a`
         box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.buttonLink.shadow};
     }
 
+    &:active {
+        transform: scale(0.95);
+    }
+
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
         font-size: 18px;
     }

@@ -1,29 +1,27 @@
 import styled from 'styled-components';
 
 export const FooterWrapper = styled.footer`
-    padding: 16px;
-    background-color: ${({ theme }) => theme.colors.footerBackground};
-    text-align: center;
+    max-width: 691px;
+    max-height: 282px;
+    margin-top: 120px;
+    padding: 0px;
+    text-align: left;
 `;
 
 export const Email = styled.p`
-    font-size: 16px;
+    max-width: fit-content;
+    font-size: 32px;
+    font-weight: 900;
+    padding: 0px;
     color: ${({ theme }) => theme.colors.textPrimary};
-    margin-bottom: 8px;
+    margin: 24px 0px 24px;
 `;
 
-export const SocialIcons = styled.div`
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-
-    a img {
-        width: 24px;
-        height: 24px;
-        transition: transform 0.3s;
-
-        &:hover {
-            transform: scale(1.1);
-        }
-    }
+export const Description = styled.p`
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+    padding: 0px;
+    margin: 0px;
+    color: ${({ theme }) => theme.colors.textPrimary};
 `;

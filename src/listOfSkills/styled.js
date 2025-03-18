@@ -6,7 +6,7 @@ export const List = styled.ul`
     margin: 0;
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(3, minmax(314px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(314px, 1fr));
     grid-row-gap: 8px;
     
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {        

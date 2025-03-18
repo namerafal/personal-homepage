@@ -1,16 +1,13 @@
 import MainWrapper from "./styled";
 import { ThemeSwitch } from "../../../common/ThemeSwitch/index";
 import { TileList } from "../../../common/Tile";
-// import Header from "./Header";
-
 import Portfolio from "./Portfolio";
 import { MainInformation } from "./MainInformation";
 import { SectionCommon } from "../../../common/Section/commonSection";
 import { skillsNow, skillsToHave } from "../../../listOfSkills/skills";
-import { ReactComponent as GitHubIcon } from "./Footer/SocialIcons/icons/github.svg"
+import { ReactComponent as GitHubIcon } from "../../../common/SocialIcons/icons/github.svg";
 import Header from "./Header";
 import { Footer } from "./Footer";
-// import { SkillsetIncludes } from "../../../listOfSkills/SkillsetIncludes";
 
 export const PersonalHomepage = () => {
     return (

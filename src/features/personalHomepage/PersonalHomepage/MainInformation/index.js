@@ -1,11 +1,11 @@
 import { email } from '../email';
-import rafalPicture from './raf.jpg';
-import { ButtonIcon, Name, Picture, ShortDescription, StyledButtonLink, ThisIs, Wrapper } from './styled';
+import { Avatar } from './Avatar';
+import { ButtonIcon, Name, ShortDescription, StyledButtonLink, ThisIs, Wrapper } from './styled';
 
 export const MainInformation = () => {
     return (
         <Wrapper>
-            <Picture src={rafalPicture} alt="Rafal picture" />
+            <Avatar />
             <div>
                 <ThisIs>This is</ThisIs>
                 <Name>Rafał Olewicz</Name>

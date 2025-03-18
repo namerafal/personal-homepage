@@ -19,14 +19,6 @@ export const Wrapper = styled.header`
     }
 `;
 
-export const Picture = styled.img`
-  width: 30vw;
-  height: 30vw;
-  max-width: 384px;
-  max-height: 384px;
-  border-radius: 50%;
-`;
-
 export const ThisIs = styled.div`
     font-size: 12px;
     font-weight: bold;

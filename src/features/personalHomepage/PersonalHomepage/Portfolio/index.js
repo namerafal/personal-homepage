@@ -8,6 +8,7 @@ import {
 import { RepoTile, RepoList } from './styled';
 import { RepoLinks } from './Links';
 import { Loading } from '../../../../common/Loading';
+import { ErrorMessage } from '../../../../common/ErrorMessage';
 
 const Portfolio = ({ username = 'namerafal' }) => {
   const dispatch = useDispatch();
@@ -23,7 +24,7 @@ const Portfolio = ({ username = 'namerafal' }) => {
   }
 
   if (status === "error") {
-    return <div>Error loading repositories.</div>;
+    return <ErrorMessage />;
   }
 
   return (

@@ -38,3 +38,17 @@ export const Content = styled.div`
         margin-top: 12px;
     }
 `;
+
+export const HeaderEmoticon = styled.img`
+    height: clamp(18px, 3vw, 27px);
+    width: auto;
+    position: relative;
+    top: 3px;
+    left: 16px;
+   
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        height: clamp(10px, 5vw, 18px); 
+        left: 12px;
+    }
+`;

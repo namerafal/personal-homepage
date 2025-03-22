@@ -1,10 +1,12 @@
 import { ListOfSkills } from "../../listOfSkills";
-// import { List, ListItem } from "../../listOfSkills/styled";
-import { Content, Title, Wrapper } from "./styled";
+import { Content, HeaderEmoticon, Title, Wrapper } from "./styled";
 
-export const TileList = ({ title, content }) => (
+export const TileList = ({ title, emoticon, content }) => (
   <Wrapper>
-    <Title>{title}</Title>
+    <Title>
+      {title}
+      <HeaderEmoticon src={emoticon} alt="" />
+    </Title>
     <Content>
       <ListOfSkills content={content} />
     </Content>

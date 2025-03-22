@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as EnvelopeIcon } from "../ButtonLink/envelope.svg";
+import { ReactComponent as EnvelopeIcon } from "../../../../images/envelope.svg";
 import { ButtonLink } from "../ButtonLink";
 
 export const Wrapper = styled.header`

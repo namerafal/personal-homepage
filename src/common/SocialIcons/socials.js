@@ -15,11 +15,11 @@ export const socials = [
         url: "http://linkedin.com/in/rafał-olewicz-80053b257",
         Icon: styleIcon(LinkedInIcon),
     },
-    {
-        name: "Instagram",
-        url: "http://instagram.com",
-        Icon: styleIcon(InstagramIcon),        
-    },
+    // {
+    //     name: "Instagram",
+    //     url: "http://instagram.com",
+    //     Icon: styleIcon(InstagramIcon),        
+    // },
     {
         name: "Facebook",
         url: "http://facebook.com/real.pro.353",

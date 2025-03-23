@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const ButtonLink = styled.a`
+    max-width: fit-content;
+    max-height: 49px;
     text-decoration: none;
     font-weight: 600;
     font-size: 20px;
@@ -21,5 +23,6 @@ export const ButtonLink = styled.a`
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
         font-size: 18px;
+        max-height: 46px;
     }
 `;

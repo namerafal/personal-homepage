@@ -6,6 +6,10 @@ export const FooterWrapper = styled.footer`
     margin-top: 120px;
     padding: 0px;
     text-align: left;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
+        margin-top: 48px;
+    }
 `;
 
 export const Email = styled.p`
@@ -15,6 +19,11 @@ export const Email = styled.p`
     padding: 0px;
     color: ${({ theme }) => theme.colors.textPrimary};
     margin: 24px 0px 24px;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
+        font-size: 18px;
+        margin: 12px 0px 12px;
+    }
 `;
 
 export const Description = styled.p`
@@ -24,6 +33,10 @@ export const Description = styled.p`
     padding: 0px;
     margin: 0px;
     color: ${({ theme }) => theme.colors.textPrimary};
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
+        font-size: 14px;        
+    }
 `;
 
 export const Emoticon = styled.img`

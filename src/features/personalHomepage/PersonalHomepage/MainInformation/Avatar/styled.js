@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-    width: 30vw;
-    height: 30vw;
+    width: 40vw;
+    height: 40vw;
     max-width: 384px;
     max-height: 384px;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-    background-color: #ccccccb0;
+    background: linear-gradient(0deg, #cccccc40, #0000003d);
 `;
 
 export const Picture = styled.img`

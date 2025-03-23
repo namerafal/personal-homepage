@@ -10,8 +10,11 @@ const MainWrapper = styled.div`
   min-height: calc(100vh - 94px);
  
   @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-    min-height: calc(100vh - 142px);
-    margin: 21px 16px 0px 16px;
+    margin: 21px 14px 0px 14px;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.mobileMax + 1}px) and (max-width: ${({ theme }) => theme.breakpoints.tabletHorizontalMax}px) {
+    margin: 28px 22px 0px 22px;
   }
 `
 export default MainWrapper;

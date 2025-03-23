@@ -19,6 +19,10 @@ export const Button = styled.button`
   color: inherit;
   outline-offset: 8px;
   cursor: pointer;
+
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+    padding: 0;
+  }
 `;
 
 export const Text = styled.span`

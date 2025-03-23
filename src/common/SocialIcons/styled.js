@@ -1,41 +1,24 @@
 import styled from "styled-components";
 
-export const SocialIcons = styled.div`
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-
-    a img {
-        width: 24px;
-        height: 24px;
-        transition: transform 0.3s;
-
-        &:hover {
-            transform: scale(1.1);
-        }
-    }
-`;
-
 export const List = styled.ul`
+    max-width: fit-content;
+    max-height: 48px;
     list-style: none;
     padding: 0;
     margin-top: 56px;
     margin-bottom: 0;    
     display: flex;
+    gap: 24px;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
         margin-top: 40px;
+        gap: 16px;
+        max-height: 32px;
     }
 `;
 
 export const Item = styled.li`
-    &:not(:last-child){
-        margin-right: 24px;       
-
-        @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
-            margin-right: 16px;
-        }
-    }
+    display: flex;    
 `;
 
 export const Link = styled.a`
@@ -48,9 +31,11 @@ export const Link = styled.a`
 `;
 
 export const styleIcon = Icon => styled(Icon)`
-    height: auto;
+    max-width: 48px;
+    max-height: 48px;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
-        height: 32px;
+        max-width: 32px;
+        max-height: fit-content;
     }
 `;

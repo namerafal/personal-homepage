@@ -19,9 +19,5 @@ export const GlobalStyles = createGlobalStyle`
         padding-bottom: 108px;
         overflow-y: scroll;
         letter-spacing: 0.05em;       
-
-        @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-            padding-bottom: 32px;
-        }
     } 
 `;

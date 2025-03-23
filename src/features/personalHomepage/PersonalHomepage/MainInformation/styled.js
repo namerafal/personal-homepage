@@ -16,6 +16,7 @@ export const Wrapper = styled.header`
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
         grid-template-columns: 1fr;
         grid-gap: 16px;
+        margin-top: -17px;
     }
 `;
 
@@ -46,7 +47,7 @@ export const ShortDescription = styled.p`
     max-width: 650px;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
-       font-size: 16px;
+       font-size: 17px;
        max-width: 570px;
     }
 
@@ -67,9 +68,8 @@ export const StyledButtonLink = styled(ButtonLink)`
 
 export const ButtonIcon = styled(EnvelopeIcon)`
     margin-right: 16px;
-`;
 
-export const Icon = styled.img`
-    vertical-align: text-top;
-    margin-right: 4px;
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
+        margin-right: 12px;
+    }
 `;

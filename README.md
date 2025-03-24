@@ -1,9 +1,34 @@
-# Personal Homepage - Rafal Olewicz
-  
-This project is a modern, responsive personal homepage built with React, Redux, and styled-components. It showcases my skills, projects, and contact information in a visually appealing and user-friendly way. The application leverages Redux-Saga for state management and includes a dark mode toggle for enhanced user experience. Deployed using GitHub Pages, it ensures easy accessibility and seamless performance across devices.
+# Personal Homepage - Rafał Olewicz
 
-## Page
-https://namerafal.github.io/personal-homepage/
+Welcome to my personal homepage! This project is a modern, responsive web application showcasing my skills, projects, and contact information. It is built with React, Redux, and styled-components, ensuring a clean and user-friendly design. The application also includes a dark mode toggle for enhanced user experience.
+
+## Demo
+
+Check out the live version of the project here:  
+[**Personal Homepage**](https://namerafal.github.io/personal-homepage/)
+
+## Technologies Used
+
+- **React** - for building the user interface
+- **Redux** - for state management
+- **Redux-Saga** - for handling side effects
+- **Styled-Components** - for styling the application
+- **GitHub Pages** - for deployment
+
+## Features
+
+- Responsive design for seamless performance across devices
+- Dark mode toggle for better user experience
+- Showcases my skills, projects, and contact information
+- Built with modern web technologies
+
+## Getting Started
+
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/namerafal/personal-homepage.git
 
 ## Available Scripts
 

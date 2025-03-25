@@ -12,7 +12,6 @@ const store = configureStore({
     theme: themeReducer,
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(sagaMiddleware),
-  // middleware: [sagaMiddleware],
 });
 
 sagaMiddleware.run(saga);

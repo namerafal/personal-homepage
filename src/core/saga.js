@@ -4,6 +4,5 @@ import { personalHomepageSaga } from '../features/personalHomepage/personalHomep
 export default function* saga() {
   yield all([
     personalHomepageSaga(),
-    // Add other sagas here
   ]);
 }

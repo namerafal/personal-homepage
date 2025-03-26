@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const MainWrapper = styled.div`
+export const MainWrapper = styled.div`
   max-width: 1216px;
   margin: 0 auto;
   margin-top: 64px;
@@ -17,4 +17,19 @@ const MainWrapper = styled.div`
     margin: 28px 22px 0px 22px;
   }
 `
-export default MainWrapper;
+
+export const ToggleButton = styled.button`
+  background-color: ${({ theme }) => theme.colors.buttonLink.border};
+  box-shadow: ${({ theme }) => theme.boxShadow};
+  color: ${({ theme }) => theme.colors.site.text};
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.ironTransparent};
+  }
+`

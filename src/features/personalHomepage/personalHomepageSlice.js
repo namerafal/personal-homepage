@@ -4,9 +4,14 @@ const personalHomepageSlice = createSlice({
   name: 'personalHomepage',
   initialState: {
     repositories: null,
+    showSkills: true,
     status: "idle",
   },
   reducers: {
+    toggleSkillsView: (state) => {
+      state.showSkills = !state.showSkills;
+    },   
+
     fetchRepositories: (state, action) => {
       state.status = "loading";
       state.repositories = null;
@@ -23,6 +28,7 @@ const personalHomepageSlice = createSlice({
 });
 
 export const {
+  toggleSkillsView,  
   fetchRepositories,
   fetchRepositoriesSuccess,
   fetchRepositoriesError,

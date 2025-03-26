@@ -12,3 +12,15 @@ export const TileList = ({ title, emoticon, content }) => (
     </Content>
   </Wrapper>
 );
+
+export const CertificatesList = ({ title, emoticon, content }) => (
+  <Wrapper>
+    <Title>
+      {title}
+      <HeaderEmoticon src={emoticon} alt="" />
+    </Title>
+    <Content>
+      {content}
+    </Content>
+  </Wrapper>
+);

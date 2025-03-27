@@ -10,8 +10,7 @@ import { ReactComponent as GitHubIcon } from "../../../common/SocialIcons/icons/
 import toolsSpannerHammer from "../../../images/toolsSpannerHammer.png";
 import rocket from "../../../images/rocket.png";
 import graduationExpert from "../../../images/graduationExpert.png";
-
-import Header from "./Header";
+import Header from "./Portfolio/Header";
 import { Footer } from "./Footer";
 import { Certificates } from "../../../common/Certificates";
 import { toggleSkillsView } from "../personalHomepageSlice";

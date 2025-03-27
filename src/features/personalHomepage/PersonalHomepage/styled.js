@@ -28,8 +28,13 @@ export const ToggleButton = styled.button`
   font-size: 16px;
   margin-bottom: 16px;
   cursor: pointer;
+  transition: background-color 0.3s;
 
   &:hover {
-    background-color: ${({ theme }) => theme.ironTransparent};
+    background-color: rgb(166 160 160 / 17%);
+  }
+
+  &:active {    
+    box-shadow: inset 0px 17px 10px 0px rgb(9 10 51 / 0.03), -1px 17px 17px 0px rgba(9, 10, 51, 0.03);
   }
 `

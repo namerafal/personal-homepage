@@ -49,9 +49,6 @@ export const PersonalHomepage = () => {
                 />
             </SectionCommon>
             <SectionCommon>
-                {/* <Certificates /> */}
-            </SectionCommon>
-            <SectionCommon>
                 <Header
                     icon={GitHubIcon}
                     title="Portfolio"

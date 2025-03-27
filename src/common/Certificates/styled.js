@@ -8,6 +8,7 @@ export const List = styled.ul`
     justify-content: space-evenly; 
     justify-items: center;    
     grid-auto-flow: column;
+    column-gap: 12px;
     grid-template-columns: repeat(auto-fill, 1fr);
    
     & > *:only-child {
@@ -22,7 +23,7 @@ export const List = styled.ul`
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {        
         grid-auto-flow: row; /* Wymuszenie układu w jednej kolumnie */
-        grid-template-columns: repeat(1, minmax(224px, 1fr));
+        row-gap: 8px;
     }
     
     & p { 
@@ -43,7 +44,12 @@ export const Item = styled.li`
 
     &:hover {
        transform: scale(1.5);
-    }
+    }    
+
+     &.hover-disabled {
+         pointer-events: auto; /* Włączenie zdarzeń wskaźnika */
+         transform: scale(1); 
+     }
 
     img, video, iframe { 
         max-height: 100%;
@@ -58,9 +64,9 @@ export const Item = styled.li`
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         height: 336px;
-        &::before {
-            font-size: 1.2em;
-            line-height: 0.7;
+        max-height: fit-content;
+        &:hover {
+            transform: scale(1);
         }
     }
 `;

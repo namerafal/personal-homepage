@@ -39,11 +39,21 @@ export const Item = styled.li`
     overflow: hidden;
     height: 478px;
     width: 100%;
+    transition: transform 0.3s;
 
-    img, video, iframe { /* Stylowanie dla obrazów, wideo lub iframe */
+    &:hover {
+       transform: scale(1.5);
+    }
+
+    img, video, iframe { 
         max-height: 100%;
         max-width: 100%;
         object-fit: contain; /* Zapewnienie proporcjonalnego dopasowania */
+        transition: transform 0.3s, cursor 0.3s;       
+
+        &.zoomed {
+            transform: scale(1.5);             
+        }
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {

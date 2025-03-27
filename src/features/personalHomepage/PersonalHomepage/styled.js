@@ -36,5 +36,6 @@ export const ToggleButton = styled.button`
 
   &:active {    
     box-shadow: inset 0px 17px 10px 0px rgb(9 10 51 / 0.03), -1px 17px 17px 0px rgba(9, 10, 51, 0.03);
+    transform: scale(0.994);
   }
 `

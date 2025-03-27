@@ -1,4 +1,4 @@
-import { Subtitle } from "../../features/personalHomepage/PersonalHomepage/Header/styled";
+import { Subtitle } from "../../features/personalHomepage/PersonalHomepage/Portfolio/Header/styled";
 import { LoadingWrapper, LoadingIcon } from "./styled";
 
 export const Loading = () => {

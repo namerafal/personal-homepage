@@ -9,6 +9,7 @@ import { skillsNow, skillsToHave } from "../../../listOfSkills/skills";
 import { ReactComponent as GitHubIcon } from "../../../common/SocialIcons/icons/github.svg";
 import toolsSpannerHammer from "../../../images/toolsSpannerHammer.png";
 import rocket from "../../../images/rocket.png";
+import graduationExpert from "../../../images/graduationExpert.png";
 
 import Header from "./Header";
 import { Footer } from "./Footer";
@@ -33,7 +34,7 @@ export const PersonalHomepage = () => {
                 ) : (
                     <CertificatesList
                         title="Certificate"
-                        emoticon={rocket}
+                        emoticon={graduationExpert}
                         content={<Certificates/>}
                     />
                 )}

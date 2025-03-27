@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.js": "/personal-homepage/static/js/main.31506f8e.js",
+    "main.js": "/personal-homepage/static/js/main.ef3c526f.js",
     "static/js/453.61d4ab14.chunk.js": "/personal-homepage/static/js/453.61d4ab14.chunk.js",
     "static/media/Rafal.png": "/personal-homepage/static/media/Rafal.a8a0e25b71d7582e97a6.png",
-    "static/media/instagram.svg": "/personal-homepage/static/media/instagram.7ec3572464e8eee9d28b49d83af986e6.svg",
+    "static/media/graduationExpert.png": "/personal-homepage/static/media/graduationExpert.62bfc80782df7de52865.png",
+    "static/media/Certificat.jpg": "/personal-homepage/static/media/Certificat.962c4840153c24c064e6.jpg",
     "static/media/sun.svg": "/personal-homepage/static/media/sun.873cf05d51f90af830846cebd56bd380.svg",
     "static/media/github.svg": "/personal-homepage/static/media/github.730ae07b20789d3a43d0b464389f2385.svg",
     "index.html": "/personal-homepage/index.html",
@@ -12,10 +13,10 @@
     "static/media/envelope.svg": "/personal-homepage/static/media/envelope.1c714d5e5655172de75844cc180a5049.svg",
     "static/media/facebook.svg": "/personal-homepage/static/media/facebook.c86c9160f434f5f752b172ce0fe890d9.svg",
     "static/media/spinner.svg": "/personal-homepage/static/media/spinner.88a075cf3a7f1af15999cb03bb3a0360.svg",
-    "main.31506f8e.js.map": "/personal-homepage/static/js/main.31506f8e.js.map",
+    "main.ef3c526f.js.map": "/personal-homepage/static/js/main.ef3c526f.js.map",
     "453.61d4ab14.chunk.js.map": "/personal-homepage/static/js/453.61d4ab14.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.31506f8e.js"
+    "static/js/main.ef3c526f.js"
   ]
 }

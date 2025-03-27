@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/personal-homepage/static/js/main.ef3c526f.js",
+    "main.js": "/personal-homepage/static/js/main.e6f677dd.js",
     "static/js/453.61d4ab14.chunk.js": "/personal-homepage/static/js/453.61d4ab14.chunk.js",
     "static/media/Rafal.png": "/personal-homepage/static/media/Rafal.a8a0e25b71d7582e97a6.png",
     "static/media/graduationExpert.png": "/personal-homepage/static/media/graduationExpert.62bfc80782df7de52865.png",
@@ -13,10 +13,10 @@
     "static/media/envelope.svg": "/personal-homepage/static/media/envelope.1c714d5e5655172de75844cc180a5049.svg",
     "static/media/facebook.svg": "/personal-homepage/static/media/facebook.c86c9160f434f5f752b172ce0fe890d9.svg",
     "static/media/spinner.svg": "/personal-homepage/static/media/spinner.88a075cf3a7f1af15999cb03bb3a0360.svg",
-    "main.ef3c526f.js.map": "/personal-homepage/static/js/main.ef3c526f.js.map",
+    "main.e6f677dd.js.map": "/personal-homepage/static/js/main.e6f677dd.js.map",
     "453.61d4ab14.chunk.js.map": "/personal-homepage/static/js/453.61d4ab14.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.ef3c526f.js"
+    "static/js/main.e6f677dd.js"
   ]
 }

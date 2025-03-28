@@ -6,7 +6,6 @@ export const Wrapper = styled.div`
     width: 100%;
     box-shadow: ${({ theme }) => theme.boxShadow};
     border-radius: ${({ theme }) => theme.borderRadiusSmall};
-
     background: ${({ theme }) => theme.colors.tileBackground};
 `;
 
@@ -17,10 +16,11 @@ export const Title = styled.h2`
     padding-bottom: 16px;
     color: ${({ theme }) => theme.colors.textPrimary};
     border-bottom: 1px solid ${({ theme }) => theme.colors.headerLine};    
-
+    
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         font-size: 18px;
         padding-bottom: 12px;
+        white-space: nowrap;
     }
 `;
 
@@ -44,8 +44,7 @@ export const HeaderEmoticon = styled.img`
     width: auto;
     position: relative;
     top: 3px;
-    left: 16px;
-   
+    left: 16px;   
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         height: clamp(10px, 5vw, 18px); 

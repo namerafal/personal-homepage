@@ -39,3 +39,21 @@ export const ToggleButton = styled.button`
     transform: scale(0.994);
   }
 `
+export const TitleWithEmoticon = styled.div`
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+
+    & > span {
+        white-space: nowrap;
+        padding-left: 4px;
+        padding-bottom: 2px;
+    }
+`;
+
+export const Emoticon = styled.img`
+    margin-left: 8px;
+    height: 1em;
+    width: auto;
+`;

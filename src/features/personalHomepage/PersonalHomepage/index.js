@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { MainWrapper, ToggleButton } from "./styled";
+import { Emoticon, MainWrapper, TitleWithEmoticon, ToggleButton } from "./styled";
 import { ThemeSwitch } from "../../../common/ThemeSwitch/index";
 import { CertificatesList, TileList } from "../../../common/Tile";
 import Portfolio from "./Portfolio";
@@ -34,7 +34,7 @@ export const PersonalHomepage = () => {
                     <CertificatesList
                         title="Certificate"
                         emoticon={graduationExpert}
-                        content={<Certificates/>}
+                        content={<Certificates />}
                     />
                 )}
             </SectionCommon>
@@ -43,8 +43,15 @@ export const PersonalHomepage = () => {
             </ToggleButton>
             <SectionCommon>
                 <TileList
-                    title="What I want to learn next"
-                    emoticon={rocket}
+                    title={
+                        <TitleWithEmoticon>
+                            What I want to <br />
+                            <span>
+                                learn next
+                                <Emoticon src={rocket} alt="" />
+                            </span>
+                        </TitleWithEmoticon>
+                    }
                     content={skillsToHave}
                 />
             </SectionCommon>

@@ -5,6 +5,10 @@ export const RepoList = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(clamp(288px, 49%, 592px), 1fr)); 
   grid-auto-rows: auto;
   gap: 16px;
+    
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
+      font-size: 14px;
+    }
 `;
 
 export const RepoTile = styled.div` 

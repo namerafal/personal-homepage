@@ -19,7 +19,7 @@ export const MainWrapper = styled.div`
 `
 
 export const ToggleButton = styled.button`
-  background-color: ${({ theme }) => theme.colors.buttonLink.border};
+  background-color: ${({ theme }) => theme.colors.toggleButton.background};
   box-shadow: ${({ theme }) => theme.boxShadow};
   color: ${({ theme }) => theme.colors.site.text};
   padding: 8px 16px;
@@ -28,15 +28,28 @@ export const ToggleButton = styled.button`
   font-size: 16px;
   margin-bottom: 16px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.1s, transform 0.1s ease-in-out;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   &:hover {
-    background-color: rgb(166 160 160 / 17%);
+    background-color: ${({ theme }) => theme.colors.toggleButton.hoverColor};
   }
 
   &:active {    
-    box-shadow: inset 0px 17px 10px 0px rgb(9 10 51 / 0.03), -1px 17px 17px 0px rgba(9, 10, 51, 0.03);
-    transform: scale(0.994);
+    box-shadow: ${({ theme }) => theme.colors.toggleButton.activeShadow};
+    transform: perspective(650px) rotateX(-9deg);
+  }
+
+  & > span {
+    display: inline-block;
+    transition: transform 0.1s ease-in-out;
+  }
+
+  &:active > span {
+    transform: perspective(150px) rotateX(-10deg);
   }
 `
 export const TitleWithEmoticon = styled.div`

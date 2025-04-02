@@ -22,7 +22,7 @@ export const List = styled.ul`
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {        
-        grid-auto-flow: row; /* Wymuszenie układu w jednej kolumnie */
+        grid-auto-flow: row;
         row-gap: 8px;
     }
     
@@ -40,22 +40,22 @@ export const Item = styled.li`
     overflow: hidden;
     height: 478px;
     width: 100%;
-    transition: transform 0.3s;
+    transition: transform 0.4s;
 
     &:hover {
        transform: scale(1.5);
     }    
 
      &.hover-disabled {
-         pointer-events: auto; /* Włączenie zdarzeń wskaźnika */
+         pointer-events: auto;
          transform: scale(1); 
      }
 
     img, video, iframe { 
         max-height: 100%;
         max-width: 100%;
-        object-fit: contain; /* Zapewnienie proporcjonalnego dopasowania */
-        transition: transform 0.3s, cursor 0.3s;       
+        object-fit: contain;
+        border: 1px solid ${({ theme }) => theme.colors.imgBorder};
 
         &.zoomed {
             transform: scale(1.5);             

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { certificates } from "./certificates.js";
 import { List, Item, } from "./styled";
 
@@ -17,7 +17,7 @@ export const Certificates = () => {
                     onClick={handleItemClick}
                     className={isHoverDisabled ? "hover-disabled" : ""}
                 >
-                    {file}
+                    {React.cloneElement(file, {title: name})}
                 </Item>
             ))}
         </List>

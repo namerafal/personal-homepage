@@ -1,20 +1,21 @@
 // import { styleCertificate } from "./styled";
-import FrontendDeveloper from "./documents/Certificat.jpg";
+import FrontendDeveloperPL from "./documents/CertificatPL.jpg";
+import FrontendDeveloperEN from "./documents/CertificatEN.jpg";
 
 export const certificates = [
     {
-        name: "Frontend Developer",
+        name: "Certyfikat PL",
         language: "PL",
         date: "2025",
         institution: "YouCode",
-        file: <img src={FrontendDeveloper} alt="Frontend Developer Certificate" />,
+        file: <img src={FrontendDeveloperPL} alt="Frontend Developer CertificatePL" />,
     },
 
     {
-        name: "Anader Certificate",
+        name: "Certificate EN",
         language: "EN",
-        date: "2024",
-        institution: "Anader Institution",
-        file: <img src={FrontendDeveloper} alt="Anader Certificate" />,
+        date: "2025",
+        institution: "YouCode",
+        file: <img src={FrontendDeveloperEN} alt="Frontend Developer CertificateEN" />,
     }
 ];

@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Emoticon, MainWrapper, TitleWithEmoticon, ToggleButton } from "./styled";
 import { ThemeSwitch } from "../../../common/ThemeSwitch/index";
-import { CertificatesList, TileList } from "../../../common/Tile";
+
 import Portfolio from "./Portfolio";
 import { MainInformation } from "./MainInformation";
 import { SectionCommon } from "../../../common/Section/commonSection";
@@ -14,6 +14,7 @@ import Header from "./Portfolio/Header";
 import { Footer } from "./Footer";
 import { Certificates } from "../../../common/Certificates";
 import { toggleSkillsView } from "../personalHomepageSlice";
+import { CertificatesTile, TileList } from "./Tile";
 
 export const PersonalHomepage = () => {
     const dispatch = useDispatch();
@@ -31,7 +32,7 @@ export const PersonalHomepage = () => {
                         content={skillsNow}
                     />
                 ) : (
-                    <CertificatesList
+                    <CertificatesTile
                         title="Certificate"
                         emoticon={graduationExpert}
                         content={<Certificates />}
@@ -39,7 +40,7 @@ export const PersonalHomepage = () => {
                 )}
             </SectionCommon>
             <ToggleButton onClick={() => dispatch(toggleSkillsView())}>
-                {showSkills ? "Show Certificate" : "Show Skills"}
+                <span>{showSkills ? "Show Certificate" : "Show Skills"}</span>
             </ToggleButton>
             <SectionCommon>
                 <TileList

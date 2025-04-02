@@ -1,4 +1,4 @@
-import { ListOfSkills } from "../../listOfSkills";
+import { ListOfSkills } from "../../../../listOfSkills";
 import { Content, HeaderEmoticon, Title, Wrapper } from "./styled";
 
 export const TileList = ({ title, emoticon, content }) => (
@@ -13,14 +13,14 @@ export const TileList = ({ title, emoticon, content }) => (
   </Wrapper>
 );
 
-export const CertificatesList = ({ title, emoticon, content }) => (
+export const CertificatesTile = ({ title, emoticon, content }) => (
   <Wrapper>
     <Title>
       {title}
       <HeaderEmoticon src={emoticon} alt="" />
     </Title>
     <Content>
-      {content}
+      {content} 
     </Content>
   </Wrapper>
 );

@@ -1,11 +1,14 @@
 import { email } from '../email';
 import { Avatar } from './Avatar';
 import { ButtonIcon, Name, ShortDescription, StyledButtonLink, ThisIs, Wrapper } from './styled';
+import { usePreventDefaultHandlers } from '../../../../utils';
 
 export const MainInformation = () => {
+const preventUserActions = usePreventDefaultHandlers();
+
     return (
         <Wrapper>
-            <Avatar />
+            <Avatar {...preventUserActions} />
             <div>
                 <ThisIs>This is</ThisIs>
                 <Name>Rafał Olewicz</Name>

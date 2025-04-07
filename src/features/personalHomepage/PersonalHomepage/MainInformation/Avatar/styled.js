@@ -17,7 +17,7 @@ export const Picture = styled.img`
     left: 2vw;
     top: -1vh;
     width: 78%;
-    height: 141%;
+    height: 101%;
     object-fit: cover;
     filter: brightness(1.05); 
 `;

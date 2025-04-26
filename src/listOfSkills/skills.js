@@ -21,7 +21,11 @@ export const skillsNow = [
 ];
 
 export const skillsToHave = [
-  "TypeScript",
   "Node.js",
   "Unit Testing",
+];
+
+export const skillsLearning = [
+  "TypeScript",
+  "TanStack Query",
 ];

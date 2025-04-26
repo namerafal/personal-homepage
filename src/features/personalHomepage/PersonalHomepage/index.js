@@ -5,10 +5,11 @@ import { ThemeSwitch } from "../../../common/ThemeSwitch/index";
 import Portfolio from "./Portfolio";
 import { MainInformation } from "./MainInformation";
 import { SectionCommon } from "../../../common/Section/commonSection";
-import { skillsNow, skillsToHave } from "../../../listOfSkills/skills";
+import { skillsLearning, skillsNow, skillsToHave } from "../../../listOfSkills/skills";
 import { ReactComponent as GitHubIcon } from "../../../common/SocialIcons/icons/github.svg";
 import toolsSpannerHammer from "../../../images/toolsSpannerHammer.png";
 import rocket from "../../../images/rocket.png";
+import owl from "../../../images/owl.png";
 import graduationExpert from "../../../images/graduationExpert.png";
 import Header from "./Portfolio/Header";
 import { Footer } from "./Footer";
@@ -46,8 +47,21 @@ export const PersonalHomepage = () => {
                 <TileList
                     title={
                         <TitleWithEmoticon>
+                            I learning <br />
+                            <span>  {/*This solution between words is added for better icon layout in sentence at smaller screens */}
+                                now <Emoticon src={owl} alt="" />
+                            </span>
+                        </TitleWithEmoticon>
+                    }
+                    content={skillsLearning}
+                />
+            </SectionCommon>
+            <SectionCommon>
+                <TileList
+                    title={
+                        <TitleWithEmoticon>
                             What I want to <br />
-                            <span>
+                            <span>  {/*This solution between words is added for better icon layout in sentence at smaller screens */}
                                 learn next
                                 <Emoticon src={rocket} alt="" />
                             </span>

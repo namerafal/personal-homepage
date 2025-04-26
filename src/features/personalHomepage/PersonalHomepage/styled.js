@@ -19,6 +19,7 @@ export const MainWrapper = styled.div`
 `
 
 export const ToggleButton = styled.button`
+  all: unset;
   background-color: ${({ theme }) => theme.colors.toggleButton.background};
   box-shadow: ${({ theme }) => theme.boxShadow};
   color: ${({ theme }) => theme.colors.site.text};
@@ -50,8 +51,9 @@ export const ToggleButton = styled.button`
 
   &:active > span {
     transform: perspective(150px) rotateX(-10deg);
-  }
-`
+  }  
+`;
+
 export const TitleWithEmoticon = styled.div`
     display: inline-flex;
     flex-wrap: wrap;

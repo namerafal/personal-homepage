@@ -3,7 +3,8 @@ export const skillsNow = [
   "HTML",
   "CSS", "CSS Grid", "CSS Flexbox", "CSS BEM convention",
   // eslint-disable-next-line
-  "JavaScript: ES6+", "JavaScript: Local Storage",
+  "JavaScript: ES6+", "JavaScript", "Local Storage",
+  "TypeScript",
   "Responsive Web Design",
   "Git", "GitHub Pull Requests & Review", "GitHub Pages",
   "Markdown",
@@ -12,7 +13,7 @@ export const skillsNow = [
   "NPM",
   "Redux Toolkit", "Redux-Saga",
   "Error Handling",
-  "Working with API (fetch, axios)",
+  "API (fetch, axios)",
   "Promises, Async/Await",
   "Code Debugging",
   "Trello",
@@ -20,12 +21,12 @@ export const skillsNow = [
   "Team Work",
 ];
 
-export const skillsToHave = [
-  "Node.js",
-  "Unit Testing",
+export const skillsToHave = [  
+  "PostgreSQL",
+  "RESTful APIs",  
 ];
 
-export const skillsLearning = [
-  "TypeScript",
+export const skillsLearning = [ 
   "TanStack Query",
+  "Unit Testing with Jest",
 ];

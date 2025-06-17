@@ -22,8 +22,7 @@ export const skillsNow = [
 ];
 
 export const skillsToHave = [  
-  "PostgreSQL",
-  "RESTful APIs",  
+  "PostgreSQL", 
 ];
 
 export const skillsLearning = [ 

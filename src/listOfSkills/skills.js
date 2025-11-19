@@ -2,7 +2,11 @@ export const skillsNow = [
   "VS Code",
   "HTML",
   "CSS", "CSS Grid", "CSS Flexbox", "CSS BEM convention",
+  "Trello",
+  "Scrum",
+  "Team Work",
   // eslint-disable-next-line
+  "WordPress", "Kadence", "Conversion Optimization", "SEO Optimization",
   "JavaScript: ES6+", "JavaScript", "Local Storage",
   "TypeScript",
   "Responsive Web Design",
@@ -16,16 +20,13 @@ export const skillsNow = [
   "API (fetch, axios)",
   "Promises, Async/Await",
   "Code Debugging",
-  "Trello",
-  "Scrum",
-  "Team Work",
 ];
 
-export const skillsToHave = [  
-  "PostgreSQL", 
+export const skillsToHave = [
+  "PostgreSQL",
 ];
 
-export const skillsLearning = [ 
+export const skillsLearning = [
   "TanStack Query",
   "Unit Testing with Jest",
 ];

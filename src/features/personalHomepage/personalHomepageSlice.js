@@ -5,11 +5,27 @@ const personalHomepageSlice = createSlice({
   initialState: {
     repositories: null,
     showSkills: true,
+    showCV: false,
+    showCertificates: false,
     status: "idle",
   },
   reducers: {
     toggleSkillsView: (state) => {
       state.showSkills = !state.showSkills;
+      state.showCertificates = false;
+      state.showCV = false;
+    },  
+
+    toggleCVview: (state) => {
+      state.showCV = !state.showCV;
+      state.showSkills = false;
+      state.showCertificates = false;
+    },   
+
+    toggleCertificatesView: (state) => {
+      state.showCertificates = !state.showCertificates;
+      state.showSkills = false;
+      state.showCV = false;
     },   
 
     fetchRepositories: (state, action) => {
@@ -28,7 +44,9 @@ const personalHomepageSlice = createSlice({
 });
 
 export const {
-  toggleSkillsView,  
+  toggleSkillsView,
+  toggleCVview,
+  toggleCertificatesView,
   fetchRepositories,
   fetchRepositoriesSuccess,
   fetchRepositoriesError,

@@ -14,34 +14,51 @@ import graduationExpert from "../../../images/graduationExpert.png";
 import Header from "./Portfolio/Header";
 import { Footer } from "./Footer";
 import { Certificates } from "../../../common/Certificates";
+import { CVs } from "../../../common/Certificates copy";
 import { toggleSkillsView } from "../personalHomepageSlice";
-import { CertificatesTile, TileList } from "./Tile";
+import { toggleCVview } from "../personalHomepageSlice";
+import { toggleCertificatesView } from "../personalHomepageSlice";
+import { CertificatesTile, CvTile, TileList } from "./Tile";
 
 export const PersonalHomepage = () => {
     const dispatch = useDispatch();
     const showSkills = useSelector((state) => state.personalHomepage.showSkills);
+    const showCertificates = useSelector((state) => state.personalHomepage.showCertificates);
+    const showCV = useSelector((state) => state.personalHomepage.showCV);
 
     return (
         <MainWrapper>
             <ThemeSwitch />
             <MainInformation />
             <SectionCommon>
-                {showSkills ? (
-                    <TileList
-                        title="My skillset includes"
-                        emoticon={toolsSpannerHammer}
-                        content={skillsNow}
-                    />
-                ) : (
+                {showCertificates ? (
                     <CertificatesTile
                         title="Certificate"
                         emoticon={graduationExpert}
                         content={<Certificates />}
                     />
+                ) : showCV ? (
+                    <CvTile
+                        title="CV"
+                        emoticon={graduationExpert}
+                        content={<CVs />}
+                    />
+                ) : (
+                    <TileList
+                        title="My skillset includes"
+                        emoticon={toolsSpannerHammer}
+                        content={skillsNow}
+                    />
                 )}
             </SectionCommon>
             <ToggleButton onClick={() => dispatch(toggleSkillsView())}>
-                <span>{showSkills ? "Show Certificate" : "Show Skills"}</span>
+                <span>Show Skills</span>
+            </ToggleButton>
+            <ToggleButton onClick={() => dispatch(toggleCertificatesView())}>
+                <span>Show Certificates</span>
+            </ToggleButton>
+            <ToggleButton onClick={() => dispatch(toggleCVview())}>
+                <span>Show CV</span>
             </ToggleButton>
             <SectionCommon>
                 <TileList

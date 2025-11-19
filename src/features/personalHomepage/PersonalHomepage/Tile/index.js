@@ -24,3 +24,14 @@ export const CertificatesTile = ({ title, emoticon, content }) => (
     </Content>
   </Wrapper>
 );
+export const CvTile = ({ title, emoticon, content }) => (
+  <Wrapper>
+    <Title>
+      {title}
+      <HeaderEmoticon src={emoticon} alt="" />
+    </Title>
+    <Content>
+      {content} 
+    </Content>
+  </Wrapper>
+);

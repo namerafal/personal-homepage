@@ -12,7 +12,7 @@ export const FooterWrapper = styled.footer`
     }
 `;
 
-export const Email = styled.p`
+export const EmailWrapper = styled.p`
     max-width: fit-content;
     font-size: 32px;
     font-weight: 900;
@@ -24,6 +24,11 @@ export const Email = styled.p`
         font-size: 18px;
         margin: 12px 0px 12px;
     }
+`;
+
+export const Email = styled.a`
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.textPrimary};
 `;
 
 export const Description = styled.p`

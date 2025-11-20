@@ -23,12 +23,12 @@ export const socials = [
     // },
     {
         name: "Facebook",
-        url: "http://facebook.com/real.pro.353",
+        url: "https://www.facebook.com/zrobmystrone",
         Icon: styleIcon(FacebookIcon),
     },
     {
         name: "CV",
-        url: "https://drive.google.com/file/d/1EVtpchzlnV5swZj4NlbEekNpct6fd1Lc/view?usp=sharing",
+        url: "https://drive.google.com/file/d/1UWsHPEe9ztSQ372zONO7hhPELiB1rlQI/view?usp=sharing",
         Icon: styleIcon(CvIcon),
     },
 ];

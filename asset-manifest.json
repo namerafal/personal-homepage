@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.js": "/personal-homepage/static/js/main.2321fd7e.js",
+    "main.js": "/personal-homepage/static/js/main.043d71e0.js",
     "static/js/453.61d4ab14.chunk.js": "/personal-homepage/static/js/453.61d4ab14.chunk.js",
     "static/media/Rafal.png": "/personal-homepage/static/media/Rafal.a1166bbff03e609186b9.png",
     "static/media/owl.png": "/personal-homepage/static/media/owl.17545eaf8d700332ae96.png",
     "static/media/graduationExpert.png": "/personal-homepage/static/media/graduationExpert.62bfc80782df7de52865.png",
     "static/media/CertificatPL.jpg": "/personal-homepage/static/media/CertificatPL.f1b78757a7754e52cbb8.jpg",
     "static/media/CertificatEN.jpg": "/personal-homepage/static/media/CertificatEN.c5a2433bf690ee2edc87.jpg",
-    "static/media/cvicon.svg": "/personal-homepage/static/media/cvicon.6f6174561146b13967a2c61a1d2d9443.svg",
+    "static/media/cviconen.svg": "/personal-homepage/static/media/cviconen.e816baae3bf053f78bcdc12082edd2ac.svg",
+    "static/media/cviconpl.svg": "/personal-homepage/static/media/cviconpl.a0f336080e90fcbd79a33756e7a82073.svg",
+    "static/media/github.svg": "/personal-homepage/static/media/github.5240b3b41ce52d9c05329c32ba6fa495.svg",
     "static/media/sun.svg": "/personal-homepage/static/media/sun.873cf05d51f90af830846cebd56bd380.svg",
-    "static/media/github.svg": "/personal-homepage/static/media/github.730ae07b20789d3a43d0b464389f2385.svg",
     "index.html": "/personal-homepage/index.html",
     "static/media/error.svg": "/personal-homepage/static/media/error.98976b596944f25fcecdea781bbd285e.svg",
     "static/media/linkedIN.svg": "/personal-homepage/static/media/linkedIN.9f38a04c76c9595b2da81e0828807b47.svg",
     "static/media/envelope.svg": "/personal-homepage/static/media/envelope.1c714d5e5655172de75844cc180a5049.svg",
     "static/media/facebook.svg": "/personal-homepage/static/media/facebook.c86c9160f434f5f752b172ce0fe890d9.svg",
     "static/media/spinner.svg": "/personal-homepage/static/media/spinner.88a075cf3a7f1af15999cb03bb3a0360.svg",
-    "main.2321fd7e.js.map": "/personal-homepage/static/js/main.2321fd7e.js.map",
+    "main.043d71e0.js.map": "/personal-homepage/static/js/main.043d71e0.js.map",
     "453.61d4ab14.chunk.js.map": "/personal-homepage/static/js/453.61d4ab14.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.2321fd7e.js"
+    "static/js/main.043d71e0.js"
   ]
 }

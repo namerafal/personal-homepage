@@ -30,13 +30,13 @@ export const socials = [
 
     {
         name: "CV-PL",
-        url: "https://drive.google.com/file/d/1i5S7XD5xwsFOWd5vanfmu1YcqgWhPego/view?usp=sharing",
+        url: "https://drive.google.com/drive/folders/1t-bDajtwUyhHbq3GOCMhrvOrDmRJFBby?usp=drive_link",
         Icon: styleIcon(CvIconPl),
     },
 
     {
         name: "CV-EN",
-        url: "https://drive.google.com/file/d/1XaOj_KrQtELJ8HiV31T_t0Kp1sdCMJRj/view?usp=sharing",
+        url: "https://drive.google.com/drive/folders/1WH3WxJ2ES3AbFCclAyjohPObfKI1WeFP?usp=drive_link",
         Icon: styleIcon(CvIconEn),
     },
 ];
